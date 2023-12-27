@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Medium - Open Links in New Tab",
+    "description": "Open links in a new tab on Medium.",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "browser_action": {
+
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://medium.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
